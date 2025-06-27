@@ -2,14 +2,15 @@ package in28min.loosecoupling;
 
 public class GameRunner {
     //private MarioGame game;
-    private SuperContraGame game;
+//    private SuperContraGame game;
+    private GamingConsole game;
 
-//    public GameRunner(MarioGame game) {
-//        this.game = game;
-//
-//    }
+//    public GameRunner(MarioGame game) {this.game = game;}
 
-    public GameRunner(SuperContraGame game) {
+//    public GameRunner(SuperContraGame game) {this.game = game;}
+
+
+    public GameRunner(GamingConsole game) {
         this.game = game;
     }
 
