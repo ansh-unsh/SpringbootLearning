@@ -1,6 +1,6 @@
-package in28min.loosecoupling;
+package in28min.springautomanage;
 
-public class AppGamingBasic {
+public class App01GamingBasic {
     public static void main(String[] args) {
 
 

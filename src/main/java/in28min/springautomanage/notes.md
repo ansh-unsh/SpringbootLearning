@@ -1,0 +1,1 @@
+The @Configuration annotation indicate that the class contains one or more beans defination and is used by Spring to manage these Beans.
