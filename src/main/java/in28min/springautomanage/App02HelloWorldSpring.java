@@ -5,6 +5,8 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import java.util.Arrays;
+
 public class App02HelloWorldSpring {
     public static void main(String[] args) {
         //1. Launch Spring Application /Context
@@ -25,10 +27,16 @@ public class App02HelloWorldSpring {
         System.out.println(context.getBean("person"));
         System.out.println(context.getBean("address2"));
      //   System.out.println(context.getBean(Address.class));
+         System.out.println(context.getBean(Person.class));
 
 
         System.out.println(context.getBean("person2MethodCall"));
         System.out.println(context.getBean("person3parameters"));
+        System.out.println(context.getBean("person4parameters"));
+
+        System.out.println("\n\n\n");
+        //context.getBeanDefinitionNames();
+        Arrays.stream(context.getBeanDefinitionNames()).forEach(System.out::println);
 
 
     }
