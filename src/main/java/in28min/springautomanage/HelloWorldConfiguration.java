@@ -4,7 +4,12 @@ package in28min.springautomanage;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-record Person(String name, int age){
+record Person(String name, int age,Address address){
+
+}
+
+
+record Address(String firsLine, String City, String Postal){
 
 }
 
@@ -25,11 +30,29 @@ public class HelloWorldConfiguration {
     }
 
     @Bean Person person(){
-        var person = new Person("Ansh", 25);
-        return person;
+        return new Person("Ansh", 25,new Address("228 Roywood", "North York", "M3A2E6"));
+    }
+
+    @Bean Person person2MethodCall(){
+        return new Person(name(),age(), address() );
     }
 
 
+    @Bean Person person3parameters(String name, int age, Address address3){
+        return new Person(name,age,address3);
+    }
+
+
+    @Bean(name="address2")
+    Address address(){
+        return new Address("228 Roywood", "North York", "M3A2E6");
+    }
+
+
+    @Bean(name="address3")
+    Address address3(){
+        return new Address("Moti Nagar", "Ludhiana", "141010");
+    }
 
 
 }
