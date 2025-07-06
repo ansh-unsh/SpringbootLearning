@@ -1,4 +1,4 @@
-package in28min.springautomanage;
+package in28min.helloworld;
 
 
 import org.springframework.context.annotation.Bean;

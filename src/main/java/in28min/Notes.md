@@ -26,6 +26,12 @@ public class HelloWorldConfiguration {}
 **SpringBeans**: anything manage by Spring framework
 ![img_2.png](img_2.png)
 
+## Important Terminology
+![img_3.png](img_3.png)
+
+
+
+
 
 
 
